@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android"
+  id="com.samsung.splanner"
+  version="1.3.0">
+    <name>SPlanner Plugin</name>
+    <description>Samsung Splanner Plugin</description>
+    <author>Samsung Electronics</author>
+    <license>Apache 2.0 License</license>
+    <engines>
+      <engine name="cordova" version=">=3.5.0" />
+    </engines>
+    <js-module src="www/splanner.js" name="splanner">
+        <clobbers target="samsung.splanner" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SplannerPlugin">
+                <param name="android-package" value="com.samsung.splanner.SplannerPlugin"/>
+            </feature>
+        </config-file>
+        
+      <config-file target="AndroidManifest.xml" parent="/*/application">
+          <meta-data android:name="com.samsung.cordova.splanner" android:value="true" />
+      </config-file>
+			  
+              <lib-file src="src/android/libs/splanner-src.jar" target-dir="libs" />
+    </platform>
+</plugin>

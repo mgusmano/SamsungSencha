@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="com.samsung.spass" version="1.3.2">
+        <name>Samsung SPass</name>
+        <description>Samsung SPass Plugin</description>
+        <author>Samsung Electronics</author>
+        <license>Apache 2.0 License</license>
+        <engines>
+            <engine name="cordova" version=">=3.5.0" />
+        </engines>
+        <js-module src="www/spass.js" name="spass">
+            <clobbers target="samsung.spass" />
+        </js-module>
+        <platform name="android">
+            <config-file target="res/xml/config.xml" parent="/*">
+                <feature name="SPassPlugin">
+                    <param name="android-package" value="com.samsung.spass.SPassPlugin" />
+                </feature>
+            </config-file>
+            <config-file target="AndroidManifest.xml" parent="/*/application">
+                <meta-data android:name="com.samsung.cordova.spass" android:value="true" />
+            </config-file>
+            <config-file target="AndroidManifest.xml" parent="/*">
+               <uses-permission android:name= "com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY"/>
+            </config-file>
+            <lib-file
+               src="src/android/libs/pass-v1.2.1.jar"
+               target-dir="libs/"
+               arch="device" />
+            <lib-file
+               src="src/android/libs/sdk-v1.0.0.jar"
+               target-dir="libs"
+               arch="device" />
+			<lib-file
+               src="src/android/libs/spass-src.jar"
+               target-dir="libs"
+               arch="device" />
+        </platform>
+    </plugin>

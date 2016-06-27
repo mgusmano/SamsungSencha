@@ -1,0 +1,66 @@
+{
+    "cordova-plugin-geolocation": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-geolocation"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.samsung.splanner": {
+        "source": {
+            "type": "local",
+            "path": "/Users/marcgusmano/devSamsungSencha/Version1.5.0/SPlanner"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.samsung.spass": {
+        "source": {
+            "type": "local",
+            "path": "/Users/marcgusmano/devSamsungSencha/Version1.5.0/SPass"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-compat": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-compat"
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.samsung.shealth": {
+        "source": {
+            "type": "local",
+            "path": "/Users/marcgusmano/devSamsungSencha/Version1.5.0/SHealth"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.samsung.spen": {
+        "source": {
+            "type": "local",
+            "path": "/Users/marcgusmano/devSamsungSencha/Version1.5.0/SPen"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.samsung.multiwindow": {
+        "source": {
+            "type": "local",
+            "path": "/Users/marcgusmano/devSamsungSencha/Version1.5.0/Multiwindow"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
